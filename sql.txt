@@ -1,0 +1,23 @@
+CREATE DATABASE IF NOT EXISTS crud;
+
+USE crud;
+
+CREATE TABLE persona (
+  codigo INT NOT NULL AUTO_INCREMENT,
+  nombre VARCHAR(100) NULL,
+  apellido VARCHAR(100) NULL,
+  edad INT NULL,
+  numTelefono VARCHAR(20) NULL,
+  numDni VARCHAR(20) NULL,
+  PRIMARY KEY (codigo)
+) ENGINE=InnoDB;
+
+
+INSERT INTO persona (nombre, apellido, edad, numTelefono, numDni)
+VALUES 
+('Roger', 'Gómez ortega', '34', '978977424', '73425698'),
+('Ruth', 'Chavez Soto', '22', '99799449', '45896231'),
+('Antonio', 'Torres Sanchez', '5', '985588118', '89374615'),
+('Jose', 'Gonzales Ocampos', '12', '98555442', '23789564'),
+('Lucas', 'Hernandez cueva', '23', '982446652', '16548793'),
+('leito', 'gonzales', '18', '985865648', '26705392')
